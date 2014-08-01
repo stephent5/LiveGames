@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+    <stylesheet>stylesheet1</stylesheet>
+    <template>menu1</template>
+    <HTMLData>
+      <![CDATA[<div class="ui-button-featured">
+        <p>
+				<strong>LIVERPOOL Vs CHELSEA</strong>
+				<br/>LIVE FROM ANFIELD AT 12PM<br/>
+        <a href="/Game/?Fixture=1">LIVE NOW</a>
+        </p>
+			</div>
+       ]]>
+    </HTMLData>
+</LiveGamesModule>

@@ -1,0 +1,1018 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E815EB13-A05D-4D32-937A-E7584ED2CAED}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LiveGamesClient1._2</RootNamespace>
+    <AssemblyName>LiveGamesClient1.2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LiveGamesClient1.2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>LiveGamesClient1.2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Apache.NMS, Version=1.5.0.2194, Culture=neutral, PublicKeyToken=82756feee3957618, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Apache.NMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.NMS.ActiveMQ, Version=1.5.1.2341, Culture=neutral, PublicKeyToken=82756feee3957618, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Apache.NMS.ActiveMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="AWS.Extensions, Version=1.5.23.1, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AWS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK, Version=1.5.23.1, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AWSSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="BitFactory.Logging">
+      <HintPath>..\..\WebSites\EAPub\Bin\BitFactory.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="BookSleeve">
+      <HintPath>packages\BookSleeve.1.2.0.5\lib\BookSleeve.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Redis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.AspNet.SignalR.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AdminController.vb" />
+    <Compile Include="Controllers\ComingSoonController.vb" />
+    <Compile Include="Controllers\FacebookLoginController.vb" />
+    <Compile Include="Controllers\FacebookNotificationDetails.vb" />
+    <Compile Include="Controllers\FBHomeController.vb" />
+    <Compile Include="Controllers\FBItemController.vb" />
+    <Compile Include="Controllers\PrizesController.vb" />
+    <Compile Include="Controllers\TermsController.vb" />
+    <Compile Include="FBRTUpdate.aspx.designer.vb">
+      <DependentUpon>FBRTUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FBRTUpdate.aspx.vb">
+      <DependentUpon>FBRTUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Models\FacebookOrderFulfillment.vb" />
+    <Compile Include="Models\FacebookPaymentUpdate.vb" />
+    <Compile Include="Models\FBItem.vb" />
+    <Compile Include="Models\FBPriceDetails.vb" />
+    <Compile Include="Controllers\FixturesController.vb" />
+    <Compile Include="Controllers\GameController.vb" />
+    <Compile Include="Controllers\HomeModuleController.vb" />
+    <Compile Include="Controllers\LeaderBoardController.vb" />
+    <Compile Include="Controllers\LeagueController.vb" />
+    <Compile Include="Controllers\LogEvent.vb" />
+    <Compile Include="Controllers\LoginController.vb" />
+    <Compile Include="Controllers\NowController.vb" />
+    <Compile Include="Controllers\PushController.vb" />
+    <Compile Include="Controllers\SRTestController.vb" />
+    <Compile Include="Controllers\SignUpController.vb" />
+    <Compile Include="Controllers\StartController.vb" />
+    <Compile Include="Controllers\StyleSelectorController.vb" />
+    <Compile Include="Controllers\SupportController.vb" />
+    <Compile Include="Controllers\TestController.vb" />
+    <Compile Include="Controllers\TestFBController.vb" />
+    <Compile Include="FacebookListener.aspx.designer.vb">
+      <DependentUpon>FacebookListener.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FacebookListener.aspx.vb">
+      <DependentUpon>FacebookListener.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JsonpResult.vb" />
+    <Compile Include="LiveEvent.vb" />
+    <Compile Include="Models\AdminEvents.vb" />
+    <Compile Include="Models\AMQEngine.vb" />
+    <Compile Include="Models\DBBackup.vb" />
+    <Compile Include="Models\DBCleanup.vb" />
+    <Compile Include="Models\DBReset.vb" />
+    <Compile Include="Models\Email2.vb" />
+    <Compile Include="Models\FacebookCreditsItem.vb" />
+    <Compile Include="Models\FacebookFriend.vb" />
+    <Compile Include="Models\FacebookGetItemsRequest.vb" />
+    <Compile Include="Models\FacebookCreditsOrderInfo.vb" />
+    <Compile Include="Models\facebookFriendList.vb" />
+    <Compile Include="Models\FacebookHelper.vb" />
+    <Compile Include="Models\FacebookPaymentsStatusRequest.vb" />
+    <Compile Include="Models\FacebookUser.vb" />
+    <Compile Include="Models\Bet.vb" />
+    <Compile Include="Models\FBFriendGameResponse.vb" />
+    <Compile Include="Models\Fixture.vb" />
+    <Compile Include="Models\FixtureBetOption.vb" />
+    <Compile Include="Models\FixtureBet.vb" />
+    <Compile Include="Models\FriendsLeaderboard.vb" />
+    <Compile Include="Models\GameEvent.vb" />
+    <Compile Include="Models\HTTPHelper.vb" />
+    <Compile Include="Models\Leaderboard.vb" />
+    <Compile Include="Models\LeaderboardExtra.vb" />
+    <Compile Include="Models\League.vb" />
+    <Compile Include="Models\LeagueInvite.vb" />
+    <Compile Include="Models\LiveGamesMessage.vb" />
+    <Compile Include="Models\LiveGamesModule.vb" />
+    <Compile Include="Models\Logger.vb" />
+    <Compile Include="Models\Odds.vb" />
+    <Compile Include="Models\Player.vb" />
+    <Compile Include="Models\Pusher.vb" />
+    <Compile Include="Models\RegisterResult.vb" />
+    <Compile Include="Models\Scorer.vb" />
+    <Compile Include="Models\Store.vb" />
+    <Compile Include="Models\StoreItem.vb" />
+    <Compile Include="Models\StorePurchase.vb" />
+    <Compile Include="Models\T5Error.vb" />
+    <Compile Include="Models\T5XML.vb" />
+    <Compile Include="Models\UBDetails.vb" />
+    <Compile Include="Models\User.vb" />
+    <Compile Include="Models\XmlSerialization.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controllers\AccountController.vb" />
+    <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Models\AccountModels.vb" />
+    <Compile Include="MyHub .vb" />
+    <Compile Include="UBListener.aspx.designer.vb">
+      <DependentUpon>UBListener.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UBListener.aspx.vb">
+      <DependentUpon>UBListener.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\Helpers.vbhtml" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Images\Thumbs.db" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="App_Data\CSS.xml" />
+    <Content Include="App_Data\HeaderXML.xml" />
+    <Content Include="App_Data\HomePageStyle.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\Image1.xml" />
+    <Content Include="App_Data\Menu1.xml" />
+    <Content Include="App_Data\Menu2.xml" />
+    <Content Include="App_Data\Menu3.xml" />
+    <Content Include="App_Data\Menu4.xml" />
+    <Content Include="App_Data\Menu5.xml" />
+    <Content Include="App_Data\SignUp.xml" />
+    <Content Include="App_Data\TopLogo.xml" />
+    <Content Include="App_Start\RegisterHubs.cs" />
+    <Content Include="bin\Apache.NMS.ActiveMQ.dll" />
+    <Content Include="bin\Apache.NMS.dll" />
+    <Content Include="bin\AWS.Extensions.dll" />
+    <Content Include="bin\AWSSDK.dll" />
+    <Content Include="bin\BitFactory.Logging.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Owin.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Redis.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\RabbitMQ.Client.dll" />
+    <Content Include="bin\SignalR_T5.RabbitMQ_T5.dll" />
+    <Content Include="bin\System.Runtime.Serialization.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="blank.htm" />
+    <Content Include="channel.html" />
+    <Content Include="Closure\Content\CSS\coda-slider-2.0.css" />
+    <Content Include="Closure\Content\CSS\content.css" />
+    <Content Include="Closure\Content\CSS\ui-styles_16_41_12_09_2013.css" />
+    <Content Include="Closure\Content\CSS\icons\ajax-loader.png" />
+    <Content Include="Closure\Content\CSS\icons\icons-18-white.png" />
+    <Content Include="Closure\Content\CSS\jquery.mobile-1.0b1.css" />
+    <Content Include="Closure\Content\CSS\jquery.mobile-1.0b1.min.css" />
+    <Content Include="Closure\Content\CSS\orbit-1.2.3.css" />
+    <Content Include="Closure\Content\CSS\orbit\bullets.jpg" />
+    <Content Include="Closure\Content\CSS\orbit\left-arrow.png" />
+    <Content Include="Closure\Content\CSS\orbit\loading.gif" />
+    <Content Include="Closure\Content\CSS\orbit\mask-black.png" />
+    <Content Include="Closure\Content\CSS\orbit\pause-black.png" />
+    <Content Include="Closure\Content\CSS\orbit\right-arrow.png" />
+    <Content Include="Closure\Content\CSS\orbit\rotator-black.png" />
+    <Content Include="Closure\Content\CSS\orbit\timer-black.png" />
+    <Content Include="Closure\Content\CSS\Template1.css" />
+    <Content Include="Closure\Content\CSS\Template2.css" />
+    <Content Include="Closure\Content\CSS\ui-styles.css" />
+    <Content Include="Closure\Content\CSS\ui-styles_11_28_20_08_2013.css" />
+    <Content Include="Closure\Content\sounds\cheer_8k.mp3" />
+    <Content Include="Closure\Content\sounds\cheer_8k.wav" />
+    <Content Include="Closure\Content\sounds\pan.mp3" />
+    <Content Include="Closure\Content\sounds\pan.wav" />
+    <Content Include="Closure\Content\sounds\sadtrombone.mp3" />
+    <Content Include="Closure\Content\sounds\sadtrombone.wav" />
+    <Content Include="Closure\Content\sounds\whistle.mp3" />
+    <Content Include="Closure\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Closure\Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Closure\Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Closure\Content\XML\CSS.xml" />
+    <Content Include="Closure\Content\XML\HeaderXML.xml" />
+    <Content Include="Closure\Content\XML\HomePageStyle.xml" />
+    <Content Include="Closure\Content\XML\Image1.xml" />
+    <Content Include="Closure\Content\XML\Menu1.xml" />
+    <Content Include="Closure\Content\XML\Menu2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Closure\Content\XML\Menu3.xml" />
+    <Content Include="Closure\Content\XML\Menu4.xml" />
+    <Content Include="Closure\Content\XML\Menu5.xml" />
+    <Content Include="Closure\Content\XML\SignUp.xml" />
+    <Content Include="Closure\Content\XML\TopLogo.xml" />
+    <Content Include="Content\CSS\coda-slider-2.0.css" />
+    <Content Include="Content\CSS\content.css" />
+    <Content Include="Content\CSS\icons\ajax-loader.png" />
+    <Content Include="Content\CSS\icons\icons-18-white.png" />
+    <Content Include="Content\CSS\jquery.mobile-1.0b1.css" />
+    <Content Include="Content\CSS\jquery.mobile-1.0b1.min.css" />
+    <Content Include="Content\CSS\landingstyles.css" />
+    <Content Include="Content\CSS\orbit-1.2.3.css" />
+    <Content Include="Content\CSS\orbit\bullets.jpg" />
+    <Content Include="Content\CSS\orbit\left-arrow.png" />
+    <Content Include="Content\CSS\orbit\loading.gif" />
+    <Content Include="Content\CSS\orbit\mask-black.png" />
+    <Content Include="Content\CSS\orbit\pause-black.png" />
+    <Content Include="Content\CSS\orbit\right-arrow.png" />
+    <Content Include="Content\CSS\orbit\rotator-black.png" />
+    <Content Include="Content\CSS\orbit\timer-black.png" />
+    <Content Include="Content\CSS\Template1.css" />
+    <Content Include="Content\CSS\Template2.css" />
+    <Content Include="Content\CSS\ui-styles.css" />
+    <Content Include="Content\CSS\ui-styles_11_28_20_08_2013.css" />
+    <Content Include="Content\CSS\ui-styles_16_41_12_09_2013.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\sounds\cheer_8k.mp3" />
+    <Content Include="Content\sounds\cheer_8k.wav" />
+    <Content Include="Content\sounds\pan.mp3" />
+    <Content Include="Content\sounds\pan.wav" />
+    <Content Include="Content\sounds\sadtrombone.mp3" />
+    <Content Include="Content\sounds\sadtrombone.wav" />
+    <Content Include="Content\sounds\whistle.mp3" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\CSS\ui-styles_23_09_2013_1100.css" />
+    <Content Include="Content\XML\CSS.xml" />
+    <Content Include="Content\XML\HeaderXML.xml" />
+    <Content Include="Content\XML\HomePageStyle.xml" />
+    <Content Include="Content\XML\Image1.xml" />
+    <Content Include="Content\XML\Menu1.xml" />
+    <Content Include="Content\XML\Menu2.xml" />
+    <Content Include="Content\XML\Menu3.xml" />
+    <Content Include="Content\XML\Menu4.xml" />
+    <Content Include="Content\XML\Menu5.xml" />
+    <Content Include="Content\XML\SignUp.xml" />
+    <Content Include="Content\XML\TopLogo.xml" />
+    <Content Include="FacebookListener.aspx" />
+    <Content Include="FBRTUpdate.aspx" />
+    <Content Include="Images\3dpitch.png" />
+    <Content Include="Images\achievements-bg.png" />
+    <Content Include="Images\add-icon.png" />
+    <Content Include="Images\admin_custom.png" />
+    <Content Include="Images\admin_EDIT.png" />
+    <Content Include="Images\admin_goalscorer.png" />
+    <Content Include="Images\admin_nosave.png" />
+    <Content Include="Images\admin_oops.png" />
+    <Content Include="Images\admin_previewpitch.png" />
+    <Content Include="Images\admin_ticker.png" />
+    <Content Include="Images\ajax-loader.gif" />
+    <Content Include="Images\arrow-right.png" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\arse-lfc-crests.png" />
+    <Content Include="Images\av-lfc-crests.png" />
+    <Content Include="Images\badge-1click-v2.png" />
+    <Content Include="Images\badge-1click.png" />
+    <Content Include="Images\badge-200credit-locked.png" />
+    <Content Include="Images\badge-200credit-unlocked.png" />
+    <Content Include="Images\badge-200limit.png" />
+    <Content Include="Images\badge-200limit2.png" />
+    <Content Include="Images\badge-credits.png" />
+    <Content Include="Images\badge-credits2.png" />
+    <Content Include="Images\badge-forfeit.png" />
+    <Content Include="Images\badge-forfeit2.png" />
+    <Content Include="Images\badge-help-v2.png" />
+    <Content Include="Images\badge-help-v3.png" />
+    <Content Include="Images\badge-help.png" />
+    <Content Include="Images\badge-iclick.png" />
+    <Content Include="Images\badge-myacc.png" />
+    <Content Include="Images\badge-pp.png" />
+    <Content Include="Images\badge-pregame-v2.png" />
+    <Content Include="Images\badge-pregame-v3.png" />
+    <Content Include="Images\badge-pregame.png" />
+    <Content Include="Images\badge-soundoff.png" />
+    <Content Include="Images\badge-soundon.png" />
+    <Content Include="Images\badge-store.png" />
+    <Content Include="Images\badge-training.png" />
+    <Content Include="Images\barca-crests.png" />
+    <Content Include="Images\barca-icon-sprite.png" />
+    <Content Include="Images\bet-tick-legend.png" />
+    <Content Include="Images\bet-tick-v2.png" />
+    <Content Include="Images\bet-tick-v3.png" />
+    <Content Include="Images\bet-tick.png" />
+    <Content Include="Images\bg-net.jpg" />
+    <Content Include="Images\bg-pattern.png" />
+    <Content Include="Images\bg-texture.png" />
+    <Content Include="Images\bg.png" />
+    <Content Include="Images\bg_pattern.png" />
+    <Content Include="Images\bg_pitch.png" />
+    <Content Include="Images\black-icon-sprite.png" />
+    <Content Include="Images\black2-icon-sprite.png" />
+    <Content Include="Images\blank-crests.png" />
+    <Content Include="Images\blue-icon-sprite.png" />
+    <Content Include="Images\blue2-icon-sprite.png" />
+    <Content Include="Images\bluediagonal-icon-sprite.png" />
+    <Content Include="Images\bluediagonal2-icon-sprite.png" />
+    <Content Include="Images\bluehorizontal-icon-sprite.png" />
+    <Content Include="Images\bluehorizontal2-icon-sprite.png" />
+    <Content Include="Images\bluered-icon-sprite.png" />
+    <Content Include="Images\bluered2-icon-sprite.png" />
+    <Content Include="Images\bluesplit-icon-sprite.png" />
+    <Content Include="Images\bluesplit2-icon-sprite.png" />
+    <Content Include="Images\button.png" />
+    <Content Include="Images\button2.png" />
+    <Content Include="Images\button3.png" />
+    <Content Include="Images\button4.png" />
+    <Content Include="Images\bwstripes-icon-sprite.png" />
+    <Content Include="Images\bwstripes2-icon-sprite-v2.png" />
+    <Content Include="Images\bwstripes2-icon-sprite.png" />
+    <Content Include="Images\celtic-lfc-crests.png" />
+    <Content Include="Images\check_off.png" />
+    <Content Include="Images\check_on.png" />
+    <Content Include="Images\circle-tick.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\club-bg.gif" />
+    <Content Include="Images\coach.png" />
+    <Content Include="Images\coinstack.png" />
+    <Content Include="Images\coinstack2.png" />
+    <Content Include="Images\cream-icon-sprite.png" />
+    <Content Include="Images\cream2-icon-sprite.png" />
+    <Content Include="Images\credits.png" />
+    <Content Include="Images\crests\arse-crests.png" />
+    <Content Include="Images\crests\celtic-crests.png" />
+    <Content Include="Images\crests\crystal-crests.png" />
+    <Content Include="Images\crests\efc-crests.png" />
+    <Content Include="Images\crests\ful-crests.png" />
+    <Content Include="Images\crests\graz-crest.png" />
+    <Content Include="Images\crests\hull-crests.png" />
+    <Content Include="Images\crests\indo-crests.png" />
+    <Content Include="Images\crests\liverpoolfc-crest.png" />
+    <Content Include="Images\crests\manu-crests.png" />
+    <Content Include="Images\crests\nufc-crests.png" />
+    <Content Include="Images\crests\olym-crests.png" />
+    <Content Include="Images\crests\psg-crest.png" />
+    <Content Include="Images\crests\south-crests.png" />
+    <Content Include="Images\crests\stoke-crests.png" />
+    <Content Include="Images\crests\sun-crests.png" />
+    <Content Include="Images\crests\swan-crests.png" />
+    <Content Include="Images\crests\villa-crests.png" />
+    <Content Include="Images\cup.png" />
+    <Content Include="Images\dark-grey-noise.jpg" />
+    <Content Include="Images\download.png" />
+    <Content Include="Images\everton-lfc-crests.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\favicon_114.png" />
+    <Content Include="Images\favicon_128.png" />
+    <Content Include="Images\favicon_144.png" />
+    <Content Include="Images\favicon_16.png" />
+    <Content Include="Images\favicon_57.png" />
+    <Content Include="Images\favicon_64.png" />
+    <Content Include="Images\favicon_72.png" />
+    <Content Include="Images\favicon_75.png" />
+    <Content Include="Images\favicon_96.png" />
+    <Content Include="Images\fb-icon.png" />
+    <Content Include="Images\FBNotifications.png" />
+    <Content Include="Images\fixtures.png" />
+    <Content Include="Images\flip-icon-tab.png" />
+    <Content Include="Images\flip-icon.png" />
+    <Content Include="Images\footer_icon_1.png" />
+    <Content Include="Images\footer_icon_2.png" />
+    <Content Include="Images\footer_icon_3.png" />
+    <Content Include="Images\game-intro-fix103.png" />
+    <Content Include="Images\game-intro-fix104.png" />
+    <Content Include="Images\game-intro-fix74.png" />
+    <Content Include="Images\game-intro-fix78.png" />
+    <Content Include="Images\game-intro-fix81.png" />
+    <Content Include="Images\game-intro-fix82.png" />
+    <Content Include="Images\game-intro-fix83.png" />
+    <Content Include="Images\game-intro-fix86.png" />
+    <Content Include="Images\game-intro.png" />
+    <Content Include="Images\gen-icon-sprite.png" />
+    <Content Include="Images\gen2-icon-sprite.png" />
+    <Content Include="Images\grass.png" />
+    <Content Include="Images\green-block.gif" />
+    <Content Include="Images\green-icon-sprite.png" />
+    <Content Include="Images\green2-icon-sprite.png" />
+    <Content Include="Images\greenhorizontal-icon-sprite.png" />
+    <Content Include="Images\greenhorizontal2-icon-sprite-v2.png" />
+    <Content Include="Images\greenhorizontal2-icon-sprite.png" />
+    <Content Include="Images\header_icon_1.png" />
+    <Content Include="Images\header_icon_2.png" />
+    <Content Include="Images\header_icon_3.png" />
+    <Content Include="Images\headline.png" />
+    <Content Include="Images\help-ui-mobile.png" />
+    <Content Include="Images\help-ui.png" />
+    <Content Include="Images\home-icon.png" />
+    <Content Include="Images\horz-logo-v2.png" />
+    <Content Include="Images\horz-logo.png" />
+    <Content Include="Images\howto-friends-mobile.png" />
+    <Content Include="Images\howto-friends.png" />
+    <Content Include="Images\howto-markers-mobile.png" />
+    <Content Include="Images\howto-markers.png" />
+    <Content Include="Images\howto-playnow.png" />
+    <Content Include="Images\hull-lfc-crests.png" />
+    <Content Include="Images\icon-backbtn.png" />
+    <Content Include="Images\icon-fixturesbtn.png" />
+    <Content Include="Images\icon-guide.png" />
+    <Content Include="Images\icon-helper-v2.png" />
+    <Content Include="Images\icon-helper.png" />
+    <Content Include="Images\icon-trainingbtn.png" />
+    <Content Include="Images\icon-warning.png" />
+    <Content Include="Images\icon_1.png" />
+    <Content Include="Images\icon_admin.png" />
+    <Content Include="Images\icon_boot.png" />
+    <Content Include="Images\icon_boot_v2.png" />
+    <Content Include="Images\icon_friends.png" />
+    <Content Include="Images\icon_leagues.png" />
+    <Content Include="Images\icon_plus.png" />
+    <Content Include="Images\icon_star.png" />
+    <Content Include="Images\icon_tick.png" />
+    <Content Include="Images\icon_timer.png" />
+    <Content Include="Images\icon_tracker.png" />
+    <Content Include="Images\icon_x.png" />
+    <Content Include="Images\indo-lfc-crests.png" />
+    <Content Include="Images\intro-3d-text-v2.png" />
+    <Content Include="Images\intro-3d-text.png" />
+    <Content Include="Images\intro-btn1.png" />
+    <Content Include="Images\intro-btn2.png" />
+    <Content Include="Images\intro-btn3.png" />
+    <Content Include="Images\intro-btn4.png" />
+    <Content Include="Images\intro-crest.png" />
+    <Content Include="Images\intro-crests-2.png" />
+    <Content Include="Images\intro-crests.png" />
+    <Content Include="Images\intro-logo.png" />
+    <Content Include="Images\intro-mashup.png" />
+    <Content Include="Images\intro-v2.png" />
+    <Content Include="Images\intro.png" />
+    <Content Include="Images\ios-icon.png" />
+    <Content Include="Images\kingkop-logo-2.png" />
+    <Content Include="Images\kingkop-logo-horz.png" />
+    <Content Include="Images\kingkop-logo.png" />
+    <Content Include="Images\league-icon1.png" />
+    <Content Include="Images\league-icon2.png" />
+    <Content Include="Images\league-icon3.png" />
+    <Content Include="Images\league-icon4.png" />
+    <Content Include="Images\lfc-crystal-crests.png" />
+    <Content Include="Images\lfc-ful-crests.png" />
+    <Content Include="Images\lfc-olymp-crests.png" />
+    <Content Include="Images\lfc-south-crests.png" />
+    <Content Include="Images\lfc-stoke-crests.png" />
+    <Content Include="Images\lfc-utd-crests.png" />
+    <Content Include="Images\liteblue-icon-sprite.png" />
+    <Content Include="Images\liteblue2-icon-sprite.png" />
+    <Content Include="Images\lock-icon.png" />
+    <Content Include="Images\logo-bg.png" />
+    <Content Include="Images\match-icon.png" />
+    <Content Include="Images\navbar-icon1.png" />
+    <Content Include="Images\navbar-icon2.png" />
+    <Content Include="Images\navbar-icon3.png" />
+    <Content Include="Images\navbar-icon4.png" />
+    <Content Include="Images\navystripes-icon-sprite.png" />
+    <Content Include="Images\navystripes2-icon-sprite-v2.png" />
+    <Content Include="Images\navystripes2-icon-sprite.png" />
+    <Content Include="Images\new-lfc-crests.png" />
+    <Content Include="Images\nextgame-promo.png" />
+    <Content Include="Images\notes.png" />
+    <Content Include="Images\nufc-lfc-crests.png" />
+    <Content Include="Images\orange-icon-sprite.png" />
+    <Content Include="Images\orange2-icon-sprite.png" />
+    <Content Include="Images\pending.png" />
+    <Content Include="Images\peno-shootout.png" />
+    <Content Include="Images\pitch_background.png" />
+    <Content Include="Images\players\adam_morgan.jpg" />
+    <Content Include="Images\players\andre_wisdom.jpg" />
+    <Content Include="Images\players\aspas.jpg" />
+    <Content Include="Images\players\assaidi.jpg" />
+    <Content Include="Images\players\bellamy.jpg" />
+    <Content Include="Images\players\brad_jones.jpg" />
+    <Content Include="Images\players\carroll.jpg" />
+    <Content Include="Images\players\coutinho.jpg" />
+    <Content Include="Images\players\daniel_agger.jpg" />
+    <Content Include="Images\players\daniel_sturridge.jpg" />
+    <Content Include="Images\players\dani_pacheco.jpg" />
+    <Content Include="Images\players\danny_wilson.jpg" />
+    <Content Include="Images\players\fabio_borini.jpg" />
+    <Content Include="Images\players\genericPlayer.jpg" />
+    <Content Include="Images\players\gerrard.jpg" />
+    <Content Include="Images\players\glen_johnson.jpg" />
+    <Content Include="Images\players\jamie_carragher.jpg" />
+    <Content Include="Images\players\joe_allen.jpg" />
+    <Content Include="Images\players\joe_cole.jpg" />
+    <Content Include="Images\players\jonjo_shelvey.jpg" />
+    <Content Include="Images\players\jon_flanagan.jpg" />
+    <Content Include="Images\players\jordan_henderson.jpg" />
+    <Content Include="Images\players\jose_enrique.jpg" />
+    <Content Include="Images\players\lucas.jpg" />
+    <Content Include="Images\players\luis_alberto.jpg" />
+    <Content Include="Images\players\luis_suarez.jpg" />
+    <Content Include="Images\players\martin_kelly.jpg" />
+    <Content Include="Images\players\martin_skrtel.jpg" />
+    <Content Include="Images\players\mignolet.jpg" />
+    <Content Include="Images\players\nuri_sahin.jpg" />
+    <Content Include="Images\players\pepe_reina.jpg" />
+    <Content Include="Images\players\raheem_sterling.jpg" />
+    <Content Include="Images\players\samed_yesil.jpg" />
+    <Content Include="Images\players\sebastian_coates.jpg" />
+    <Content Include="Images\players\steven_gerrard.jpg" />
+    <Content Include="Images\players\steward_downing.jpg" />
+    <Content Include="Images\players\suarez.jpg" />
+    <Content Include="Images\players\suso.jpg" />
+    <Content Include="Images\players\toure.jpg" />
+    <Content Include="Images\players\Traore.gif" />
+    <Content Include="Images\playnow-btn-2.png" />
+    <Content Include="Images\playnow-btn.png" />
+    <Content Include="Images\playnow-new-btn.png" />
+    <Content Include="Images\powerups-bg.png" />
+    <Content Include="Images\pp-icon.png" />
+    <Content Include="Images\prediction-success.png" />
+    <Content Include="Images\profile-pic.png" />
+    <Content Include="Images\promo-graphic.png" />
+    <Content Include="Images\radio_off.png" />
+    <Content Include="Images\radio_on.png" />
+    <Content Include="Images\red-icon-sprite.png" />
+    <Content Include="Images\red2-icon-sprite.png" />
+    <Content Include="Images\redblack-icon-sprite.png" />
+    <Content Include="Images\redblack2-icon-sprite-v2.png" />
+    <Content Include="Images\redblack2-icon-sprite.png" />
+    <Content Include="Images\redstripes-icon-sprite.png" />
+    <Content Include="Images\redstripes2-icon-sprite-v2.png" />
+    <Content Include="Images\redstripes2-icon-sprite.png" />
+    <Content Include="Images\red_background.png" />
+    <Content Include="Images\ribbon-logo.png" />
+    <Content Include="Images\sample-crests.png" />
+    <Content Include="Images\scorer-bg.gif" />
+    <Content Include="Images\slogan.png" />
+    <Content Include="Images\soccerball.png" />
+    <Content Include="Images\spinner2.png" />
+    <Content Include="Images\star.png" />
+    <Content Include="Images\stats.png" />
+    <Content Include="Images\stevie-bg-2.png" />
+    <Content Include="Images\stevie-bg.png" />
+    <Content Include="Images\sub-logo.png" />
+    <Content Include="Images\sun-lfc-crests.png" />
+    <Content Include="Images\swan-lfc-crests.png" />
+    <Content Include="Images\tick.png" />
+    <Content Include="Images\tracker-icon.png" />
+    <Content Include="Images\turq-icon-sprite.png" />
+    <Content Include="Images\turq2-icon-sprite.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\white-icon-sprite.png" />
+    <Content Include="Images\white2-icon-sprite.png" />
+    <Content Include="Images\wine-icon-sprite.png" />
+    <Content Include="Images\wine2-icon-sprite.png" />
+    <Content Include="Images\yellow-icon-sprite.png" />
+    <Content Include="Images\yellow2-icon-sprite.png" />
+    <Content Include="livescripts\allmin_1609_160713.js" />
+    <Content Include="livescripts\allmin_1638_12092013.js" />
+    <Content Include="livescripts\allmin_20_09_2013_1252.js" />
+    <Content Include="livescripts\allmin_22_11_13_1046.js" />
+    <Content Include="livescripts\allmin_2307_1514.js" />
+    <Content Include="livestyles\ui-styles_06_01_2014.css" />
+    <Content Include="livestyles\ui-styles_20_09_2013_1252.css" />
+    <Content Include="livestyles\ui-styles_11_28_20_08_2013.css" />
+    <Content Include="livestyles\ui-styles_16_41_12_09_2013.css" />
+    <Content Include="livestyles\ui-styles_23_09_2013_1100.css" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages\jQuery.1.6.4\Content\Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="packages\jQuery.1.6.4\Content\Scripts\jquery-1.6.4.js" />
+    <Content Include="packages\jQuery.1.6.4\Content\Scripts\jquery-1.6.4.min.js" />
+    <Content Include="packages\jQuery.1.6.4\Tools\jquery-1.6.4-vsdoc-para.js" />
+    <Content Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="Scripts\administrator.js" />
+    <Content Include="livescripts\allmin_11_28_20_08_2013.js" />
+    <Content Include="Scripts\allmin_11_28_20_08_2013.js" />
+    <Content Include="Scripts\allmin_1609_160713.js" />
+    <Content Include="Scripts\allmin_1638_12092013.js" />
+    <Content Include="Scripts\allmin_20_09_2013_1252.js" />
+    <Content Include="Scripts\allmin_2307_1514.js" />
+    <Content Include="Scripts\bet.js" />
+    <Content Include="Scripts\errornew.js" />
+    <Content Include="Scripts\ender.js" />
+    <Content Include="Scripts\error.js" />
+    <Content Include="Scripts\fb.js" />
+    <Content Include="Scripts\ga.js" />
+    <Content Include="Scripts\init.js" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery.multi-select.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0-rc1.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0-rc1.min.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0.min.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.1.min.js" />
+    <Content Include="Scripts\jquery.ticker.js" />
+    <Content Include="Scripts\login.js" />
+    <Content Include="Scripts\newpush.js" />
+    <Content Include="Scripts\pushutilities.js" />
+    <Content Include="Scripts\T5Pusher.js" />
+    <Content Include="Scripts\t5ticker.js" />
+    <Content Include="Scripts\testm.js" />
+    <Content Include="Scripts\ui.js" />
+    <Content Include="Scripts\iscroll-lite.js" />
+    <Content Include="Scripts\iscroll.js" />
+    <Content Include="Scripts\jquery-1.4.2.min.js" />
+    <Content Include="Scripts\jquery-1.7.min.js" />
+    <Content Include="Scripts\jquery.coda-slider-2.0.js" />
+    <Content Include="Scripts\jquery.countdown.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.jblitter.js" />
+    <Content Include="Scripts\jquery.json-2.3.js" />
+    <Content Include="Scripts\jquery.orbit-1.2.3.min.js" />
+    <Content Include="Scripts\jquery.pageslide.js" />
+    <Content Include="Scripts\jquery.pageslide.min.js" />
+    <Content Include="Scripts\League.js" />
+    <Content Include="Scripts\LiveEvent.js" />
+    <Content Include="Scripts\LiveGamesSignalR.js" />
+    <Content Include="Scripts\lsbind.js" />
+    <Content Include="Scripts\lsblank.html" />
+    <Content Include="Scripts\lscommons.js" />
+    <Content Include="Scripts\lsengine.html" />
+    <Content Include="Scripts\lsengine.js" />
+    <Content Include="Scripts\lsform.html" />
+    <Content Include="Scripts\lspushpage.js" />
+    <Content Include="Scripts\modernizr-2.5.2.js" />
+    <Content Include="Scripts\modernizr.custom.12549.js" />
+    <Content Include="Scripts\modernizr.custom.31914.js" />
+    <Content Include="Scripts\modernizr.custom.56054.js" />
+    <Content Include="Scripts\playtomic.v1.9.min.js" />
+    <Content Include="Scripts\Referee.js" />
+    <Content Include="Scripts\scrollhelper.js" />
+    <Content Include="Scripts\signalr.js" />
+    <Content Include="Scripts\store.js" />
+    <Content Include="Scripts\user.js" />
+    <Content Include="UBListener.aspx" />
+    <Content Include="Views\SignUp\SignUp.vbhtml" />
+    <Content Include="Views\HomeModule\HeaderFeed.vbhtml" />
+    <Content Include="Views\Fixtures\Index.vbhtml" />
+    <Content Include="Views\Shared\_HomeLayoutPage.vbhtml" />
+    <Content Include="Views\StyleSelector\GetStyle.vbhtml" />
+    <Content Include="Views\Game\Index.vbhtml" />
+    <None Include="packages\jQuery.1.6.4\jQuery.1.6.4.nupkg" />
+    <None Include="packages\jQuery.1.6.4\Tools\install.ps1" />
+    <None Include="packages\jQuery.1.6.4\Tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.Web.Infrastructure.1.0.0.0\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" />
+    <Content Include="packages\repositories.config" />
+    <None Include="Scripts\build.number" />
+    <None Include="Scripts\compatibility_version.number" />
+    <None Include="Scripts\version.number" />
+    <Content Include="Views\Leaderboard\Leaderboard.vbhtml" />
+    <Content Include="Views\Facebook\Facebook.vbhtml" />
+    <Content Include="Views\Shared\Leaderboard\leaderboardfacebookfriends.vbhtml" />
+    <Content Include="Views\Shared\Leaderboard\leaderboardoverall.vbhtml" />
+    <Content Include="Views\League\LeagueCreate.vbhtml" />
+    <Content Include="Views\League\ViewCreatedLeague.vbhtml" />
+    <Content Include="Views\League\ViewYourLeague.vbhtml" />
+    <Content Include="Views\Leaderboard\leaderboardLeague.vbhtml" />
+    <Content Include="Views\League\JoinLeague.vbhtml" />
+    <Content Include="Views\TestFB\Index.vbhtml" />
+    <Content Include="Views\ComingSoon\Index.vbhtml" />
+    <Content Include="Views\Support\Index.vbhtml" />
+    <Content Include="Views\Start\Index.vbhtml" />
+    <Content Include="Views\Now\Index.vbhtml" />
+    <Content Include="Views\Game\Ref.vbhtml" />
+    <Content Include="Views\Shared\_SignalRLayoutPage.vbhtml" />
+    <Content Include="Views\SRTest\Index.vbhtml" />
+    <Content Include="Views\Test\Index.vbhtml" />
+    <Content Include="Views\TOS\Index.vbhtml" />
+    <Content Include="Views\FBItem\Index.vbhtml" />
+    <Content Include="Views\Home\Copy of Index_BeforeLandingPageMerge.vbhtml" />
+    <Content Include="Views\FBHome\Index.vbhtml" />
+    <Content Include="Views\Prizes\Index.vbhtml" />
+    <Content Include="Views\Terms\Index.vbhtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\config.js" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Closure\Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Account\ChangePassword.vbhtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.vbhtml" />
+    <Content Include="Views\Account\LogOn.vbhtml" />
+    <Content Include="Views\Account\Register.vbhtml" />
+    <Content Include="Views\Home\About.vbhtml" />
+    <Content Include="Views\Home\Index.vbhtml" />
+    <Content Include="Views\Shared\Error.vbhtml" />
+    <Content Include="Views\Shared\_LogOnPartial.vbhtml" />
+    <Content Include="Views\Shared\_Layout.vbhtml" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>80</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://127.0.0.1/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://dev.liveplayfootball.com</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

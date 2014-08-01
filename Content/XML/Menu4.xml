@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+    <stylesheet>stylesheet1</stylesheet>
+    <template>menu4</template>
+    <HTMLData>
+      <![CDATA[<!--<a href="/Fixtures/?GameID=1" class="ui-button-home">
+				<h1>Upcoming Fixtures</h1>
+				<p>FEATURED GAMES FROM THE WORLDS TOP LEAGUES AND CUPS</p>
+			</a>-->
+       ]]>
+    </HTMLData>
+</LiveGamesModule>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+    <stylesheet>stylesheet1</stylesheet>
+    <template>menu1</template>
+    <HTMLData>
+      <![CDATA[
+		  <div class="promo">
+        <img src="/Images/intro-crest.png" border="0" alt="What Happens Next?" align="center" class="crest" style="max-height:100%;max-width:100%;margin-top:15px;"/>
+			  <img src="/Images/intro-crest.png" border="0" alt="What Happens Next?" align="center" class="intro_mobile" style="width:100%; max-width:100%;"/>
+        <div class="header">
+				  <h1>
+				    <span>Man City VS Liverpool</span> <a id="PlayLink" style="display:block" onClick="return CheckIfLoggedIn(95);" href="/Game/?f=95"><img src="/Images/playnow-btn.png" border="0" alt="Play Now" align="center" style="max-width:130px;"/></a>
+				  </h1>			
+				  <br clear="all"/>				
+			  </div>			  
+		  </div>
+      
+      <script type="text/javascript">
+            loginFixtureID = 95; //NB - John - this needs to be the same id as number in the url above ie. if url = /Game/?f=8 therefore loginFixtureID = 8
+      </script>
+      
+      ]]>
+    </HTMLData>
+</LiveGamesModule>

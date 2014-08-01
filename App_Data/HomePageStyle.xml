@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+  <stylesheet>Template2.css</stylesheet>
+  <template>template2</template>
+  <HTMLData />
+</LiveGamesModule>

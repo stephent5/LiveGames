@@ -1,0 +1,4 @@
+[Trust5] -- {Logger} --<Info> -- 13/10/2011 09:28:49 -- Logger created
+[Trust5] -- {Logger} --<Info> -- 13/10/2011 09:45:29 -- Logger created
+[Trust5] -- {Logger} --<Info> -- 13/10/2011 10:06:48 -- Logger created
+[Trust5] -- {Logger} --<Info> -- 13/10/2011 10:25:04 -- Logger created

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+    <stylesheet>stylesheet1</stylesheet>
+    <template>Logo</template>
+    <HTMLData>
+      <![CDATA[<div class="logo"><img src="/images/ribbon-logo.png" border="0" alt="Real Play" style="width:100%;"></div>
+	<div class="slogan"><img src="/images/slogan.png" border="0" alt="Live Interactive Sport"></div>
+       ]]>
+    </HTMLData>
+</LiveGamesModule>

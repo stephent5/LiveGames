@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+    <stylesheet>stylesheet1</stylesheet>
+    <template>menu5</template>
+    <HTMLData>
+      <![CDATA[<a href="#game" class="ui-button">
+				<h1>How it works</h1>
+				<p>QUICK RUN DOWN ON THE RULES WITH TIPS AND TRICKS</p>
+        <span class="icon3"></span>
+			</a>
+       ]]>
+    </HTMLData>
+</LiveGamesModule>

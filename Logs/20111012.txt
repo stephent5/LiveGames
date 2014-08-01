@@ -1,0 +1,18 @@
+[Trust5] -- {Logger} --<Info> -- 12/10/2011 16:59:09 -- Logger created
+[Trust5] -- {MySql} --<Error> -- 12/10/2011 16:59:27 -- MySql.Data.MySqlClient.MySqlException (0x80004005): Procedure or function 'USP_GetCurcrentFixtures' cannot be found in database 'livegames'.
+   at MySql.Data.MySqlClient.ProcedureCache.GetProcData(MySqlConnection connection, String spName)
+   at MySql.Data.MySqlClient.ProcedureCache.AddNew(MySqlConnection connection, String spName)
+   at MySql.Data.MySqlClient.ProcedureCache.GetProcedure(MySqlConnection conn, String spName)
+   at MySql.Data.MySqlClient.StoredProcedure.GetParameters(String procName)
+   at MySql.Data.MySqlClient.StoredProcedure.Resolve()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at LiveGamesClient1._2.Fixture.GetFixtures(Int32 GameID) in C:\Users\Stephen\Documents\Visual Studio 2010\Projects\LiveGamesClient1.2\Models\Fixture.vb:line 151
+   at MySql.Data.MySqlClient.ProcedureCache.GetProcData(MySqlConnection connection, String spName)
+   at MySql.Data.MySqlClient.ProcedureCache.AddNew(MySqlConnection connection, String spName)
+   at MySql.Data.MySqlClient.ProcedureCache.GetProcedure(MySqlConnection conn, String spName)
+   at MySql.Data.MySqlClient.StoredProcedure.GetParameters(String procName)
+   at MySql.Data.MySqlClient.StoredProcedure.Resolve()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at LiveGamesClient1._2.Fixture.GetFixtures(Int32 GameID) in C:\Users\Stephen\Documents\Visual Studio 2010\Projects\LiveGamesClient1.2\Models\Fixture.vb:line 151

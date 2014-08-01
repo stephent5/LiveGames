@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+    <stylesheet>stylesheet1</stylesheet>
+    <template>menu3</template>
+    <HTMLData>
+      <![CDATA[<a href="signup/signup" class="ui-button">
+				        <h1>Quick Start</h1>
+				        <p>NO NEED TO SIGNUP, TRY OUT A GAME WITHOUT COMMITMENT</p>
+                        <span class="icon1"></span>
+			         </a>
+       ]]>
+    </HTMLData>
+</LiveGamesModule>

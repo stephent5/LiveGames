@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+  <stylesheet>stylesheet1</stylesheet>
+  <template>CSS</template>
+  <HTMLData>
+    <![CDATA[
+        <link href="/Content/CSS/TesingStyleChange.css" rel="stylesheet" type="text/css" />
+       ]]>
+  </HTMLData>
+</LiveGamesModule>

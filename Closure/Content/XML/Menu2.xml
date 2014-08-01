@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+  <stylesheet>stylesheet1</stylesheet>
+  <template>menu1</template>
+  <HTMLData>
+    <![CDATA[
+     
+     <span id="homeSpan"></span> <!-- DO NOT REMOVE THIS SPAN _ EVER!!!!!! _ IT TELLS US WHAT PAGE WE ARE ON -->
+     <span id="logout"></span>
+
+     <div id="webview">
+       <div class="promo" style="padding-top:50px;">        
+          <div style="width:900px; margin:auto;">
+            <div style="float:left; width:50%;">
+              <img src="/Images/intro-logo.png" border="0" alt="What Happens Next?" align="center">	
+              <br/>
+              <img src="https://d2q72sm6lqeuqa.cloudfront.net/images/intro-crests-2.png" border="0" alt="What Happens Next?" align="center">
+              <br clear="all">		
+              <br clear="all">	
+              <div class="match_intro">
+				          <span class="home_team_desc">LIVERPOOL</span>
+                  <span class="seperator">V</span>
+                  <span class="away_team_desc">ANZHI</span>		
+                  <br clear="all"/>
+			        </div>	
+              <br clear="all"/>
+              <strong>UEFA EUROPA LEAGUE, K.O 10.00</strong>
+            </div>
+            <div style="float:left; width:50%;">        
+              <img src="/Images/intro-mashup.png" border="0" alt="What Happens Next?" align="center">          
+            </div>
+            <br clear="all"/>
+          </div>
+		   </div>  
+       
+       <div class="navbar">
+            <span class="nav" onClick="showhowtoplay();"><img src="/Images/navbar-icon1.png" alt="How to play" border="0" /> <span>How to<br/>play</span></span>
+            <span class="nav" onClick="showtech();"><img src="/Images/navbar-icon2.png" alt="How can I play?" border="0" /> <span>Browser<br/>Support</span></span>
+            
+            <a id="PlayLink" style="display:none;" class="playnow" onClick="return CheckIfLoggedIn(474);" href="/Game/?f=474"><img src="/Images/playnow-new-btn.png" alt="Play Now!" border="0" /></a>
+            
+            <a class="nav" href="http://www.facebook.com/pages/T5-LiveGames/169134899848595" target="_new" style="border-left:none;"><img src="/Images/navbar-icon3.png" alt="facebook" border="0" /> <span>Like us on<br/>facebook</span></a>
+            <a class="nav" href="https://twitter.com/t5livegames" target="_new"><img src="/Images/navbar-icon4.png" alt="Twitter" border="0" /> <span>Follow us<br/>on Twitter</span></a>
+       </div>       
+     </div>
+    
+    <!-- mobile view below here -->
+     <div id="mobileview" style="display:none;">
+       <div class="promo">        
+          <div style="width:100%; text-align:center;">
+            <div>
+              <img src="/Images/intro-logo.png" border="0" alt="What Happens Next?" align="center">	
+              <br/>
+              <img src="https://d2q72sm6lqeuqa.cloudfront.net/images/intro-crests-2.png" border="0" alt="What Happens Next?" align="center" style="width:200px;">	
+              <div class="match_intro">
+				          <span class="home_team_desc">LIVERPOOL</span>
+                  <span class="seperator">V</span>
+                  <span class="away_team_desc">SWANSEA</span>		
+                  <br clear="all"/>
+			        </div>	
+              <strong style="color:#fff;font-weight:normal;">CAPITAL ONE CUP, K.O 20.00</strong>
+            </div>
+            <br clear="all"/>
+          </div>
+          <br clear="all"/>
+		   
+         <div class="navbar">
+              <!-- back button for LFC Connect App -->
+              <span class="nav" onClick=""><img src="https://d2q72sm6lqeuqa.cloudfront.net/images/Images/icon-backbtn.png" alt="Back" border="0" /></span>
+              <!-- / -->
+            
+              <span class="nav" onClick=""><img src="https://d2q72sm6lqeuqa.cloudfront.net/images/Images/icon-fixturesbtn.png" alt="How can I play?" border="0" /></span>
+            
+              <a id="PlayLink" style="display:none;" class="playnow" onClick="return CheckIfLoggedIn(474);" href="/Game/?f=474"><img src="https://d2q72sm6lqeuqa.cloudfront.net/images/Images/playnow-btn-2.png" alt="Play Now!" border="0" /></a>
+            
+              <span class="nav" onClick="showhowtoplay();"><img src="https://d2q72sm6lqeuqa.cloudfront.net/images/Images/icon-trainingbtn.png" alt="facebook" border="0" /></span>
+            
+              <span class="nav">&nbsp;</span>
+              
+         </div>
+      </div><!-- end promo -->
+     </div>     
+     <script type="text/javascript">
+            loginFixtureID = 474; //NB - John - this needs to be the same id as number in the url above ie. if url = /Game/?f=8 therefore loginFixtureID = 8
+     </script> 
+      ]]>
+  </HTMLData>
+</LiveGamesModule>

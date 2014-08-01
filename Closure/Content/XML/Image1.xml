@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+    <stylesheet>stylesheet1</stylesheet>
+    <template>image1</template>
+    <HTMLData>
+      <![CDATA[<div class="intro-graphic">
+			<img src="images/player-blur.png" border="0" alt="GOAL, CORNER OR FREE KICK? Â« PREDICT WHAT HAPPENS NEXT TO WIN Â»" />
+		</div>
+       ]]>
+    </HTMLData>
+</LiveGamesModule>

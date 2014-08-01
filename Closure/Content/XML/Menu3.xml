@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LiveGamesModule>
+  <stylesheet>stylesheet1</stylesheet>
+  <template>menu3</template>
+  <HTMLData>
+    <![CDATA[
+		  <div class="promo">
+        <img src="/images/nextgame-promo.png" border="0" alt="#" style="max-width:100%;"/>		  
+		  </div>         
+      ]]>
+  </HTMLData>
+</LiveGamesModule>
